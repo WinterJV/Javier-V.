@@ -1,0 +1,567 @@
+@font-face {
+    font-family: 'Gotham Ultra';
+    src: url('../../fuentes/Gotham\ Ultra.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Albiona Soft Ligth';
+    src: url('../../fuentes/Albiona\ Soft\ Light.otf') format('opentype');
+}
+
+
+body{
+    /*background: linear-gradient(to right,hsl(219, 49%, 15%),hsl(220, 46%, 23%), hsl(222, 42%, 22%) );*/
+    margin: 0;
+}
+
+.menu{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(#182745,#111827);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .links{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 20px;
+    font-family: 'Gotham Ultra';
+}
+
+.menu .links a{
+    text-decoration: none;
+    color: #99d4e5;
+    font-size: 1.0rem;
+}
+
+.menu .links a:hover{
+    text-shadow: 0px 0px 20px white;
+}
+
+/*Seccion 2 */
+
+.informacion-principal{
+    display: flex;
+    position: relative;
+}
+
+.triangulo{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 250px solid transparent;
+    border-top: 0;
+    /* border-left: 250px solid rgb(22, 36, 63); */
+    border-left: 250px solid #99d4e5;
+    z-index: 1;
+}
+
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60%;
+   /*  background: rgb(242, 242, 242); */
+   background: linear-gradient(#182745,#111827);
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Gotham Ultra';
+    font-size: 2.1rem;
+    padding: 10px;
+    color: #99d4e5;
+}
+
+.informacion #especialidad{
+    font-size: 1.3rem;
+}
+
+a{
+    text-decoration: none;
+    color: #99d4e5;
+}
+
+#nombre{
+    font-family: 'Gotham Ultra';
+}
+
+
+.snowflake {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.snowflake .posicion-1 {
+    width: 35%;
+    font-size: 3.9rem;
+}
+
+.snowflake-2 {
+    width: 100%;
+    display: grid; 
+    justify-items: end;
+}
+
+.snowflake-2 .posicion-2 {
+    width: 35%;
+    font-size: 3.9rem;
+}
+
+
+/*Seccion 1*/
+.seccion-1{
+    width: 100%;
+    height: 3px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.linea-seccion-1{
+    width: 90%;
+    height: 3px;
+    background: #99d4e5;
+    box-shadow: 0px 0px 10px 0px rgb(89, 193, 219);
+    border-radius: 50px;
+
+}
+
+.rombo-seccion{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.rombo-linea-seccion{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background: #99d4e5;
+    top: -33px;
+    rotate: 45deg;
+    box-shadow: 0px 0px 10px 0px rgb(89, 193, 219);
+}
+
+.flecha-izquierda{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 292px solid transparent;
+    border-right: 0;
+    /* border-left: 250px solid rgb(22, 36, 63); */
+    border-left: 400px solid #99d4e5;
+    z-index: 1;
+}
+
+.acerca-de-mi{
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background: linear-gradient(#182745,#111827);
+    padding: 5%;
+    height: 430px;
+    font-family: 'Albiona Soft Ligth';
+    text-align: justify;
+}
+
+.grid-1{
+    width: 100%;
+}
+
+.grid-2{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.primera-fila-rombos{
+    display: flex;
+    width: 100%; 
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+}
+
+.rombo-primera-fila-foto{
+    width: 120px;
+    height: 120px;
+    background: #16243f;
+    rotate: 45deg;
+    overflow: hidden;
+    position: relative;
+}
+
+ .rombo-primera-fila-foto img{
+    position: absolute;
+    width: 180%;
+    height: auto;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+} 
+
+.rombo-primera-fila-foto{
+    width: 120px;
+    height: 120px;
+    background: red;
+    rotate: 45deg;
+    position: relative;
+    overflow: hidden;
+}
+
+.rombo-primera-fila-foto img{
+    position: absolute;
+    width: 160%;
+    height: auto;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.rombo-primera-fila-foto{
+    width: 120px;
+    height: 120px;
+    background: red;
+    rotate: 45deg;
+    position: relative;
+    overflow: hidden;
+}
+
+.rombo-primera-fila-foto img{
+    position: absolute;
+    width: 160%;
+    height: auto;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.segunda-fila-rombos{
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.rombo-segunda-fila-foto{
+    width: 120px;
+    height: 120px;
+    background: #16243f;
+    rotate: 45deg;
+    overflow: hidden;
+    position: relative;
+}
+
+.rombo-segunda-fila-foto img{
+    position: absolute;
+    width: 160%;
+    height: auto;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.rombo-segunda-fila-foto{
+    width: 120px;
+    height: 120px;
+    background: #16243f;
+    rotate: 45deg;
+    overflow: hidden;
+    position: relative;
+}
+
+.rombo-segunda-fila-foto img{
+    position: absolute;
+    width: 160%;
+    height: auto;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.tercer-fila-rombos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rombo-tercer-fila-foto{
+    width: 120px;
+    height: 120px;
+    background: #16243f;
+    rotate: 45deg;
+    position: relative;
+    overflow: hidden;
+}
+
+.rombo-tercer-fila-foto img{
+    position: absolute;
+    width: 160%;
+    height: auto;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/*Seccion 2*/
+.linea-seccion-2{
+    position: relative;
+    width: 95%;
+    height: 3px;
+    background: #111827;
+    margin: auto;
+}
+
+.experiencias{
+    display: grid;
+    grid-template-columns: 60% 10% 30% ;
+    background: linear-gradient(#182745,#111827);
+    padding: 5%;
+    color: white;
+    font-family: 'Albiona Soft Ligth';
+    text-align: justify;
+}
+
+.grid-experiencias-1{
+    width: 100%;
+    /* background: red; */
+}
+
+.grid-software-skill-2{
+    display: flex;
+}
+
+.linea{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.linea-experiencia-skill{
+    width: 1%;
+    background: #99d4e5;
+    box-shadow: 0px 0px 10px 0px rgb(89, 193, 219);
+    border-radius: 50px;
+}
+
+.grid-software-skill-2{
+    width: 100%;
+    /* background: rgb(12, 73, 163); */
+}
+
+.Resultados-Logros{
+    background: linear-gradient(#182745,#111827);
+    padding: 5%;
+    color: white;
+    font-family: 'Albiona Soft Ligth';
+    text-align: justify;
+}
+
+/*WhatsApp*/
+
+/*Linea Correo*/
+.contenedor-base{
+    position: fixed;
+    display: flex;
+    left:0px;
+    bottom:0px;
+    display: flex;
+}
+
+.email{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: white;
+    margin: 10px;
+    margin-left: 5px;
+    font-family: 'Albiona Soft Light';
+}
+
+.whatsapp-btn{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 1px;
+    background: #00a884;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px 0px white;
+    z-index: 1000;
+}
+
+.whatsapp-btn:hover{
+    background-color: white;
+}
+
+/*Adaptacion responsivo*/
+
+@media (max-width: 1250px) {
+    .primera-fila-rombos{
+        gap: 60px;
+    }
+    .segunda-fila-rombos{
+        gap: 60px;
+    }
+    .tercera-fila-rombos{
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .acerca-de-mi{
+        grid-template-columns: 100%;
+        height: auto;
+    }
+
+    .grid-2{
+        padding: 4%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .rombo-primera-fila-foto{
+        width: 100px;
+        height: 100px;
+    }
+
+    .rombo-segunda-fila-foto{
+        width: 100px;
+        height: 100px;
+    }
+
+    .rombo-tercer-fila-foto{
+        width: 100px;
+        height: 100px;
+    }
+
+    .triangulo{
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 150px solid transparent;
+        border-top: 0;
+        /* border-left: 250px solid rgb(22, 36, 63); */
+        border-left: 150px solid #99d4e5;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 750px){
+
+    .menu .links{
+        margin: 0px;
+    }
+
+    .menu .links a{
+        font-size: 13px;
+    }
+
+
+    .email{
+        margin-left: -8px;
+    }
+
+    .experiencias{
+        grid-template-columns:100%;
+    }
+
+    .acerca-de-mi{
+        padding: 7%;
+    }
+
+    .experiencias{
+        padding: 7%;
+    }
+
+    .Resultados-Logros{
+        padding: 7%;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu{
+        justify-content: center;
+    }
+
+    .menu .links{
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .menu .links a{
+        font-size: 10px;
+    }
+
+    #nombre{
+        font-size: 30px;
+    }
+
+    .informacion #especialidad{
+        font-size: 17px;
+        margin-top: -8px;
+    }
+
+    .snowflake{
+        margin: auto;
+    }
+
+    .acerca-de-mi{
+        padding: 9%;
+    }
+
+    .email{
+        margin-left: -11px;
+    }
+
+    .rombo-primera-fila-foto{
+        width: 50px;
+        height: 50px;
+    }
+
+    .rombo-segunda-fila-foto{
+        width: 50px;
+        height: 50px;
+    }
+
+    .rombo-tercer-fila-foto{
+        width: 50px;
+        height: 50px;
+    }
+
+    .experiencias{
+        grid-template-columns:100%;
+        padding: 9%;
+    }
+
+    .linea-experiencia-skill{
+        width: 50%;
+        height: 1px;
+    }
+
+    .Resultados-Logros{
+        padding: 9%;
+    }
+    
+    .grid-2{
+        padding: 4%;
+        overflow: hidden;
+    }
+}
