@@ -91,6 +91,9 @@ a{
     font-family: 'Gotham Ultra';
 }
 
+.cv-image{
+    width: 32px;
+}
 
 .snowflake {
     margin-top: 50px;
@@ -404,6 +407,10 @@ a{
     .tercera-fila-rombos{
         gap: 60px;
     }
+
+    .cv-image{
+        width: 34px;
+    }
 }
 
 @media (max-width: 1190px) {
@@ -414,6 +421,10 @@ a{
 
     .grid-2{
         padding: 4%;
+    }
+
+    .cv-image{
+        width: 32px;
     }
 
 }
@@ -443,6 +454,10 @@ a{
         /* border-left: 250px solid rgb(22, 36, 63); */
         border-left: 150px solid #99d4e5;
         z-index: 1;
+    }
+
+    .cv-image{
+        width: 32px;
     }
 }
 
@@ -556,5 +571,9 @@ a{
     .grid-2{
         padding: 4%;
         overflow: hidden;
+    }
+
+    .cv-image{
+        width: 8.2%;
     }
 }
