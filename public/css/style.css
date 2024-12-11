@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Gotham Ultra';
-    src: url('/public/fuentes/Gotham\ Ultra.otf') format('opentype');
+    src: url('../fuentes/Gotham\ Ultra.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Albiona Soft Ligth';
-    src: url('/public/fuentes/Albiona\ Soft\ Light.otf') format('opentype');
+    src: url('../fuentes/Albiona\ Soft\ Light.otf') format('opentype');
 }
 
 
@@ -103,6 +103,10 @@ a{
 }
 
 .informacion #especialidad{
+    z-index: 1;
+}
+
+.direcciones{
     z-index: 1;
 }
 
@@ -448,6 +452,7 @@ a{
 }
 
 @media (max-width: 1000px) {
+
     .rombo-primera-fila-foto{
         width: 100px;
         height: 100px;
@@ -480,6 +485,15 @@ a{
 }
 
 @media (max-width: 750px){
+
+    .imagen-fondo{
+        position: absolute;
+        width: 100%;
+        background-repeat: inherit;
+        z-index: 1;
+        opacity: 0.8;
+        height: 100%;
+    }
 
     .menu .links{
         margin: 0px;
