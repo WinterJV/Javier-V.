@@ -84,7 +84,6 @@ body{
     width: 100%;
     z-index: 1;
     opacity: 0.8;
-    margin-top: -9px;
 }
 
 .informacion #especialidad{
@@ -369,11 +368,32 @@ a{
 }
 
 .Resultados-Logros{
+    width: 100%;
     background: linear-gradient(#182745,#111827);
-    padding: 5%;
     color: white;
     font-family: 'Albiona Soft Ligth';
     text-align: justify;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.fondo{
+    position: absolute;
+    width: 100%;
+    display: flex;
+}
+
+.fonto-flechas{
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.contenido{
+    padding: 5%;
+    z-index: 1;
 }
 
 /*WhatsApp*/
@@ -519,10 +539,6 @@ a{
     .experiencias{
         padding: 7%;
     }
-
-    .Resultados-Logros{
-        padding: 7%;
-    }
 }
 
 @media (max-width: 450px) {
@@ -601,15 +617,20 @@ a{
         padding: 9%;
     }
 
+    .contenido{
+        padding: 9%;
+    }
+
+    .fondo{
+        height: 100%;
+        top: -10px;
+    }
+
     .linea-experiencia-skill{
         width: 50%;
         height: 1px;
     }
 
-    .Resultados-Logros{
-        padding: 9%;
-    }
-    
     .grid-2{
         padding: 4%;
         overflow: hidden;
