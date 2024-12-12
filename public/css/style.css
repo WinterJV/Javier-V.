@@ -221,6 +221,7 @@ a{
     justify-content: center;
     align-items: center;
     padding: 1%;
+    z-index: 1;
 }
 
 .foto-acerca-de-mi{
@@ -695,12 +696,14 @@ a{
     }
 
     .contenido-fondo-copos{
-        display: block;
+        display: flex;
+        justify-content: right;
     }
     
     .contenido-fondo-copos img{
-        width: 100%;
+        width: 94%;
         z-index: 1;
+        transform: rotate(45deg);
     }
     
 
