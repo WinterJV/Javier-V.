@@ -194,12 +194,15 @@ a{
     width: 100%;
     position: absolute;
     display: flex;
-    justify-content: right;
+    justify-content: left;
     display: none;
 }
 
 .contenido-fondo-copos img{
-    width: 70%;
+    width: 30%;
+    background-repeat: inherit;
+    transform: rotate(20deg);
+
 }
 
 .contenido-acerca-de-mi{
@@ -696,7 +699,9 @@ a{
     }
 
     .contenido-fondo-copos{
+        width: 100%;
         display: flex;
+        overflow: hidden;
         justify-content: right;
     }
     
