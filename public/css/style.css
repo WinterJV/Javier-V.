@@ -171,7 +171,53 @@ a{
     top: -33px;
     rotate: 45deg;
     box-shadow: 0px 0px 10px 0px rgb(89, 193, 219);
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.rombo-linea-seccion::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 120px;
+    left: 25%;
+    top: -25%;
+    animation: rotate-rombo 20s linear infinite;
+    background-color: #182642;
+    box-shadow: 0px 0px 20px 0px rgb(89, 193, 219);
+    z-index: 1;
+}
+
+.rombo-linea-seccion::after{
+    content: '';
+    position: absolute;
+    background: #99d4e5;
+    inset: 5px;
+    z-index: 1;
+}
+
+/*ANIMACIONES KEYFRAMES*/
+@keyframes rotate-rombo {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.rombo-linea-seccion img {
+    position: absolute;
+    z-index: 2;
+    width: 45px;
+    rotate: -45deg;
+    height: 45px;
+    border-radius: 50%;
+}
+
 
 .flecha-izquierda{
     position: absolute;
@@ -213,6 +259,7 @@ a{
 }
 
 .grid-1{
+    margin-top: 10px;
     width: 100%;
     z-index: 1;
 }
