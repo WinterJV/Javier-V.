@@ -86,6 +86,17 @@ body{
     opacity: 0.8;
 }
 
+.imagen-fondo-navidad{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right; 
+    opacity: 1;
+}
+
+
 .informacion #especialidad{
     font-size: 1.3rem;
 }
@@ -438,7 +449,10 @@ a{
     display: grid;
     grid-template-columns: 60% 10% 30% ;
     background: linear-gradient(#182745,#111827);
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     color: white;
     font-family: 'Albiona Soft Ligth';
     text-align: justify;
@@ -491,7 +505,10 @@ a{
 
 .contenido{
     position: relative;
-    padding: 5%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
     width: auto;
     z-index: 2;
 }
